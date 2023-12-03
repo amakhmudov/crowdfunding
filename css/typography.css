@@ -1,0 +1,23 @@
+h1, .h1{
+  @apply text-4xl leading-snug font-bold text-body font-playfair;
+}
+h2, .h2{
+  @apply text-3xl leading-snug font-medium text-body font-playfair;
+}
+h3, .h3{
+  @apply text-xl text-body font-medium;
+}
+
+h6, .h6{
+  @apply text-xs uppercase text-body/70 tracking-wider;
+}
+a{
+  @apply text-accent inline-block underline hover:no-underline;
+}
+.comments{
+  @apply text-body/60;
+
+  span:first-child{
+    @apply text-body after:content-['/'];
+  }
+}

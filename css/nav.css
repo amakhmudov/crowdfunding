@@ -1,0 +1,19 @@
+.nav{
+  @apply flex justify-between;
+
+  ul{
+    @apply flex items-center space-x-8;
+
+    a{
+      @apply text-body-light no-underline hover:underline;
+    }
+
+    a.is_active{
+      @apply text-body;
+    }
+  }
+
+  &-toggle{
+    @apply flex items-center space-x-2;
+  }
+}
