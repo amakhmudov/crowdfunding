@@ -1,7 +1,7 @@
 .nav{
   @apply flex justify-between;
 
-  ul{
+  > ul{
     @apply flex items-center space-x-8;
 
     a{

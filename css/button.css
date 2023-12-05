@@ -3,7 +3,7 @@
 }
 
 .btn-clear{
-  @apply px-6 py-3 rounded border border-body/20 text-body no-underline;
+  @apply px-6 py-3 rounded border border-body/20 text-body no-underline hover:opacity-80 transition;
 }
 
 .btn-with-icon{
