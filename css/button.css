@@ -15,5 +15,5 @@
 }
 
 .badge{
-  @apply relative border rounded-full py-1 px-3 pl-6 before:content-[''] before:rounded-full before:w-1 before:h-1 before:absolute before:left-3 before:top-1/2 before:-translate-y-1/2 before:bg-body;
+  @apply text-white bg-body px-4 py-2 text-xs uppercase no-underline rounded hover:opacity-90 transition;
 }
