@@ -1,13 +1,12 @@
 h1, .h1{
-  @apply text-4xl leading-snug font-bold text-body font-playfair;
+  @apply text-4xl leading-snug font-bold text-body font-playfair lg-down:text-3xl;
 }
 h2, .h2{
-  @apply text-3xl leading-snug font-medium text-body font-playfair;
+  @apply text-3xl leading-snug font-medium text-body font-playfair lg-down:text-2xl;
 }
 h3, .h3{
-  @apply text-xl text-body font-medium;
+  @apply text-xl text-body font-medium lg-down:text-lg;
 }
-
 h6, .h6{
   @apply text-xs uppercase text-body/70 tracking-wider;
 }

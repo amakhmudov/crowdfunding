@@ -36,7 +36,7 @@ body {
 }
 
 .decorative-icon{
-  @apply w-16 h-16 bg-accent/20 text-accent rounded-full center;
+  @apply w-16 h-16 bg-accent/20 text-accent rounded-full center md-down:mx-auto;
 }
 
 .title{
@@ -57,6 +57,10 @@ body {
 
   p:after{
     @apply rotate-180;
+  }
+
+  h2{
+    @apply text-3xl;
   }
 }
 

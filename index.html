@@ -14,7 +14,7 @@
 
 <body x-bind:class="bodyScroll || 'overflow-hidden'" x-data="{bodyScroll: true, isMobile: false}">
   <div id="container">
-    <header class="header">
+    <header class="header hidden">
       <div class="text-white bg-body py-4">
         <div class="container">
           <div class="flex items-center justify-between">
@@ -98,8 +98,8 @@
     <main class="main">
       <div class="py-24 bg-white-light border-y">
         <div class="container">
-          <div class="flex items-center justify-between flex-wrap -mx-3">
-            <div class="w-5/12 px-3">
+          <div class="flex items-center justify-between flex-wrap -mx-3 lg-down:flex-col-reverse">
+            <div class="w-full lg:w-5/12 px-3 lg-down:-mt-20 z-20 lg-down:p-12 lg-down:pb-0 lg-down:bg-white-light lg-down:text-center">
               <p class="h6">Befarq bo'lma, o'z hissangizni qo'shing</p>
               <h1 class="mb-6">Quyosh energiyasidan tabiatga zararsiz va samarali usulda foydalanish.</h1>
 
@@ -109,15 +109,15 @@
                 <p>Kelajak avlod uchun o’zimizdan keyin musaffo havo, sog’lom tabiat qoldirish maqsadimiz...</p>
               </div>
 
-              <div class="flex space-x-4">
+              <div class="flex space-x-4 lg-down:justify-center">
                 <a href="#" class="btn">Investiciya kiritaman</a>
                 <a href="#" class="btn-clear">Batafsil o'qish</a>
               </div>
             </div>
 
-            <div class="w-6/12 px-3">
+            <div class="w-full lg:w-6/12 px-3">
               <figure class="relative">
-                <img src="img/solar.jpg" width="674" height="500" alt="solar" class="ml-auto w-full relative z-10">
+                <img src="img/solar.jpg" width="674" height="500" alt="solar" class="ml-auto w-full max-h-[500px] lg-down:h-80 object-cover relative z-10">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="539" height="524" fill="none" class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/3">
                   <g fill="#C6E6CA" clip-path="url(#a)">
@@ -128,7 +128,7 @@
                   </defs>
                 </svg>
 
-                <div class="flex items-center p-8 space-x-4 bg-white rounded shadow-lg absolute -left-16 bottom-16 z-20">
+                <div class="flex items-center p-8 space-x-4 bg-white rounded shadow-lg absolute left-1/2 lg-down:-translate-x-1/2 lg:-left-16 bottom-16 z-20">
                   <span class="decorative-icon">
                     <svg class="w-7 h-7 svg-stroke">
                       <use href="img/s-spr.svg#metrics"></use>
@@ -149,8 +149,8 @@
           <h2>Tizim maqsadlari</h2>
         </div>
 
-        <div class="grid grid-cols-4 gap-6">
-          <div class="space-y-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-12">
+          <div class="space-y-6 md-down:text-center">
             <span class="decorative-icon">
               <svg class="w-7 h-7 svg-stroke">
                 <use href="img/s-spr.svg#metrics"></use>
@@ -163,7 +163,7 @@
             </div>
           </div>
 
-          <div class="space-y-6">
+          <div class="space-y-6 md-down:text-center">
             <span class="decorative-icon">
               <svg class="w-7 h-7 svg-stroke">
                 <use href="img/s-spr.svg#search"></use>
@@ -176,7 +176,7 @@
             </div>
           </div>
 
-          <div class="space-y-6">
+          <div class="space-y-6 md-down:text-center">
             <span class="decorative-icon">
               <svg class="w-7 h-7 svg-stroke">
                 <use href="img/s-spr.svg#hand-love"></use>
@@ -189,7 +189,7 @@
             </div>
           </div>
 
-          <div class="space-y-6">
+          <div class="space-y-6 md-down:text-center">
             <span class="decorative-icon">
               <svg class="w-7 h-7 svg-stroke">
                 <use href="img/s-spr.svg#home"></use>
@@ -212,13 +212,13 @@
 
         <div class="container">
           <div class="space-y-16 text-center">
-            <div class="grid grid-cols-3 gap-6 text-left">
+            <div class="grid lg:grid-cols-3 gap-6 lg:text-left">
               <div class="rounded-lg bg-white shadow-lg space-y-6 overflow-hidden">
                 <img src="img/projects/e-mobile.jpg" width="443" height="325" alt="e-mobile car" class="w-full h-80 object-cover">
 
                 <div class="p-6 pt-0 space-y-8">
                   <div class="space-y-4">
-                    <div class="flex items-center text-xs space-x-4 text-body-light">
+                    <div class="flex lg-down:justify-center items-center text-xs space-x-4 text-body-light">
                       <a href="#" class="badge">Texnologiya</a>
 
                       <p class="flex items-center space-x-2">
@@ -242,7 +242,7 @@
 
                 <div class="p-6 pt-0 space-y-8">
                   <div class="space-y-4">
-                    <div class="flex items-center text-xs space-x-4 text-body-light">
+                    <div class="flex items-center lg-down:justify-center text-xs space-x-4 text-body-light">
                       <a href="#" class="badge">Meta olam</a>
 
                       <p class="flex items-center space-x-2">
@@ -266,7 +266,7 @@
 
                 <div class="p-6 pt-0 space-y-8">
                   <div class="space-y-4">
-                    <div class="flex items-center text-xs space-x-4 text-body-light">
+                    <div class="flex items-center lg-down:justify-center text-xs space-x-4 text-body-light">
                       <a href="#" class="badge">AI</a>
 
                       <p class="flex items-center space-x-2">
@@ -413,7 +413,7 @@
         </div>
 
         <div class="container">
-          <ul class="grid grid-cols-4 divide-x divide-x-body/20 bg-white rounded-lg shadow-lg py-12">
+          <ul class="grid grid-cols-2 lg:grid-cols-4 divide-x divide-x-body/20 bg-white rounded-lg shadow-lg py-12 lg-down:gap-y-12">
             <li class="flex flex-col space-y-1 text-center">
               <strong class="h2">6.500+</strong>
               <span class="text-body-light">topshirilgan arizalar</span>
@@ -484,7 +484,7 @@
       </div>
     </main>
 
-    <footer class="footer bg-body pt-16 text-white">
+    <footer class="footer bg-body pt-16 text-white hidden">
       <div class="container space-y-8">
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="172" height="63" fill="none" class="text-white">
